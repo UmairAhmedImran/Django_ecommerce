@@ -21,7 +21,7 @@ Python should be installed
 7. add the url in puddle urls.py with index function.
 8. python3 manage.py runserver
 
-## Creating nav bar 
+## Creating nav bar and footer
 1. create base.html in core/template/core and cut paste all items from index.html
 2. use block and extend to use base.html in every file.
 3. create a new function in views.py for contact and render it to contact.html
@@ -30,3 +30,16 @@ Python should be installed
 6. create a nav bar in base.html.
 7. create a footer in base.html
 8. python3 manage.py runserver
+
+## Creating category and items
+1. python3 manage.py startapp item
+2. In settings.py add item in installed_app
+3. python3 manage.py createsuperuser
+4. In models.py of item create a table for item and a table for category
+5. pip install pillow
+6. python3 manage.py makemigrations
+7. python3 manage.py migrate
+8. in admin.py of item add category and item using register method
+9. python3 manage.py runserver
+10. go to /admin, write password and username.
+11. add items and categories
