@@ -20,3 +20,13 @@ Python should be installed
 6. add basic html and tailwindcss cdn script
 7. add the url in puddle urls.py with index function.
 8. python3 manage.py runserver
+
+## Creating nav bar 
+1. create base.html in core/template/core and cut paste all items from index.html
+2. use block and extend to use base.html in every file.
+3. create a new function in views.py for contact and render it to contact.html
+4. create a contact page and add an h1.
+5. add url as contact/ in urls.py.
+6. create a nav bar in base.html.
+7. create a footer in base.html
+8. python3 manage.py runserver
