@@ -43,3 +43,11 @@ Python should be installed
 9. python3 manage.py runserver
 10. go to /admin, write password and username.
 11. add items and categories
+
+## Adding items and categories to front page
+
+1. in views.py of core create two new object items and categories
+2. pass these varaibles in contet to be used in template.
+3. In index.html use loop to show first 6 items and all categories.
+4. in urls.py add MEDIA_URL and MEDIA_ROOT.
+5. python3 manage.py runserver to see changes
